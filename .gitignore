@@ -1,0 +1,41 @@
+###
+# Unity folders and files
+###
+/Project_SlowMo/[Aa]ssets/AssetStoreTools*
+/Project_SlowMo/[Bb]uild/
+/Project_SlowMo/[Ll]ibrary/
+/Project_SlowMo/[Ll]ocal[Cc]ache/
+/Project_SlowMo/[Oo]bj/
+/Project_SlowMo/[Tt]emp/
+/Project_SlowMo/[Uu]nityGenerated/
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
+
+###
+# VS/MD solution and project files
+###
+[Ee]xportedObj/
+*.booproj
+*.csproj
+*.sln
+*.suo
+*.svd
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+.DS_Store
+
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

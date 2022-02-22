@@ -1,0 +1,427 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2036651992221577711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036651992221577705}
+  - component: {fileID: 2036651992221577704}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2036651992221577705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036651992221577711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2036651992221577704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036651992221577711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741f419b142b3b9439cf2f3bed0efa42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMenu: 0
+  isSlowMo: 0
+  sounds:
+  - name: Menu
+    clip: {fileID: 8300000, guid: 8078a3762f7ef2f41b27d826d3c8ded6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Gameplay
+    clip: {fileID: 8300000, guid: 4ca5fc2640f88b74da577304b9a24fe1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Walking
+    clip: {fileID: 8300000, guid: 0633c4d21df40e243b95ceaa9e634d63, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SpeedUp
+    clip: {fileID: 8300000, guid: 8feefbeacd5dbf34e9cbae994625b872, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SlowDown
+    clip: {fileID: 8300000, guid: d34b3c40c898ca34ea94907ef01a610b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Button Select
+    clip: {fileID: 8300000, guid: 27dbc40ad46aabc478abeaab943cad0c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Button Confirm
+    clip: {fileID: 8300000, guid: 4cc08466e8777434b86e794b1d4fa604, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShootHandgun
+    clip: {fileID: 8300000, guid: 339d3d72ea139cf419cf2b8c619f5f78, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShootShotgun
+    clip: {fileID: 8300000, guid: 0320d4be9cf45634a9c6acf9526495be, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MenuOpen
+    clip: {fileID: 8300000, guid: 8dfffd994c17dbf42b6ec07f0666691a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MenuClose
+    clip: {fileID: 8300000, guid: 776e5129220a68247bff0b9a9d612290, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fail
+    clip: {fileID: 8300000, guid: 45e0f8b4a64bf68498749436bc1db307, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LevelLost
+    clip: {fileID: 8300000, guid: 55ac6cc3b5f9c4345a211abc713282d1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LevelWin
+    clip: {fileID: 8300000, guid: ea74e84c5d708f9488bda036d87412e9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CollectPainkiller
+    clip: {fileID: 8300000, guid: b806d08d44aad384eb6dd122b41f0de9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TakeDamage
+    clip: {fileID: 8300000, guid: 5d97286a600c53d4f89dc3dc1bdb5c8f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: UsedPainkiller
+    clip: {fileID: 8300000, guid: 67f8abf33c6cf97449788471317b6083, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Checkpoint
+    clip: {fileID: 8300000, guid: 2a42145bb5b33794abf52cc08b84273f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: HandgunReload
+    clip: {fileID: 8300000, guid: 15cedca00aacc3c4082afe3466694332, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EmptyMag
+    clip: {fileID: 8300000, guid: dc16ad07da5456d4f8d757900ba66a27, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WeaponSwap
+    clip: {fileID: 8300000, guid: 3789a96a49ccc4d4185e851b7432846e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MeleeWhoosh
+    clip: {fileID: 8300000, guid: 48d3e4b64fa7c3e4ea13868a8b6cc3db, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MeleeHitEnemy
+    clip: {fileID: 8300000, guid: ca10f0d1a8492944fa9ca1225de0c333, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DamageIndicator
+    clip: {fileID: 8300000, guid: 74a5c1a14f365344caaac617a2bcab6e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShieldHit
+    clip: {fileID: 8300000, guid: a72a5f31e6f0188479fc986285db408a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShieldDeactivate
+    clip: {fileID: 8300000, guid: 6e9369cdec3fa3e468ae9f7db5c75c53, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TargetHit
+    clip: {fileID: 8300000, guid: 7e5f22d5644898d4db7b5a65706305e8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DoorOpen
+    clip: {fileID: 8300000, guid: 0b9b268f631a9de44993c38989c6da34, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: 2f979cdc2bdd7cc4cb312875f4e6c2eb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AOEAction
+    clip: {fileID: 8300000, guid: 45912d1f9627ce44bb6a1774d40d3075, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AOERecharge
+    clip: {fileID: 8300000, guid: 548b7e253cdae2c4cbcaf827e274ea87, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: de0bfa80d130a3c429e438c0fa2e0df0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MetalHit
+    clip: {fileID: 8300000, guid: 5d77d1f870a99534387137825e8977a9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeThrow
+    clip: {fileID: 8300000, guid: 92600f57551ef924ebd12887121d2820, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShieldOpening
+    clip: {fileID: 8300000, guid: 13b5a7e102904104ab019c7435ddf563, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShieldClosing
+    clip: {fileID: 8300000, guid: 9343a5483a9975a4f954cef08f59265f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Resupply
+    clip: {fileID: 8300000, guid: 88ce50c9fb3402642a998fe9e60e4a86, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Debris
+    clip: {fileID: 8300000, guid: c4e53fb131803bd44a0aac181e71e1dd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bullseye
+    clip: {fileID: 8300000, guid: 181348d4de4ef3d46b2fa60de510c724, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BullseyeAgain
+    clip: {fileID: 8300000, guid: 6bb4286520339034791229bae4388b1b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BullseyeAgainAgain
+    clip: {fileID: 8300000, guid: ae05229ec6ea4134c920907a3ad509cd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 81cc9d2975c495546b191f5b7d0b25e8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Land
+    clip: {fileID: 8300000, guid: 92533153345bc794fa1f597bd52607db, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AR_Shot1
+    clip: {fileID: 8300000, guid: 3450986c5a9806e4db37eccf3c45c0eb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AR_Shot2
+    clip: {fileID: 8300000, guid: 3450986c5a9806e4db37eccf3c45c0eb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DoorOpenNew
+    clip: {fileID: 8300000, guid: c6344e5fc04ca414cb3f04083e863bf0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GlassShatter
+    clip: {fileID: 8300000, guid: 26d49bc507868444a890803d0580c5f8, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GlassImpact
+    clip: {fileID: 8300000, guid: e463d238bf884c449982c551c7893d1e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: NewObjective
+    clip: {fileID: 8300000, guid: cda2d4d28293ba447817650968bd1a54, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ObjectiveComplete
+    clip: {fileID: 8300000, guid: 3b3f79673d5cd8743bc72d803d3b3621, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShotgunReload
+    clip: {fileID: 8300000, guid: c113168e21ec14c4383ffd120eee60c1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ARReload
+    clip: {fileID: 8300000, guid: 861ef808c6501af4980e9e529192b6d7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Exhausted
+    clip: {fileID: 8300000, guid: 75902f34312bad24ca9c0376c0251a8a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Rolling
+    clip: {fileID: 8300000, guid: a76b822d44f91f249961ba511b28de91, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TakeDamage2
+    clip: {fileID: 8300000, guid: d9abdcb0db743ad4989ea957e47195a7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TakeDamage3
+    clip: {fileID: 8300000, guid: 3e2410fb57f116e43b53144049699f62, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: d522766e58c79004c89903bd0750c845, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Landing
+    clip: {fileID: 8300000, guid: fa29600861391de44bf59dbbae783e79, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Crouch_1
+    clip: {fileID: 8300000, guid: d37446eca3f57ae4d9f902f4fecdc200, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Crouch_2
+    clip: {fileID: 8300000, guid: 9d988e8998669bf4f913b1afc56dc521, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GrenadeExplosion
+    clip: {fileID: 8300000, guid: f6b561b6318fcfb4696c1feb992165f4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BarrelExplosion
+    clip: {fileID: 8300000, guid: 729f8b8a822a4a4499a0244196cedc67, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shield_Recharge
+    clip: {fileID: 8300000, guid: 94bb03a4f91f95d4d951a561f5c346ae, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  audioSources: []
